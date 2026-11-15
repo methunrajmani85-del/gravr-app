@@ -1,19 +1,45 @@
-<!doctype html><html lang="en"><head><title>GRAVR — Dot Matrix Lifting Log</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html><html lang="en"><head><title>GRAVR — Dot Matrix Lifting Log</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="GRAVR is a workout and food log for iPhone and Apple Watch. Log every set, beat last week. No account, no ads, no tracking.">
 <style>
-:root{color-scheme:dark}
+:root{color-scheme:dark;--red:#ff241b;--line:#2a2a2a;--dim:#8e8e8e}
 body{margin:0;background:#000;color:#f2f2f2;font:17px/1.6 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
 main{max-width:680px;margin:0 auto;padding:48px 20px 80px}
+main.wide{max-width:920px}
 h1{font-size:34px;line-height:1.15;margin:0 0 6px}
-h2{font:600 12px/1.4 ui-monospace,Menlo,monospace;letter-spacing:.18em;text-transform:uppercase;color:#8e8e8e;margin:40px 0 8px}
-p,li{color:#e6e6e6} .dim{color:#8e8e8e;font-size:14px}
+h2{font:600 12px/1.4 ui-monospace,Menlo,monospace;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);margin:40px 0 8px}
+h3{font-size:19px;line-height:1.3;margin:0 0 4px}
+p,li{color:#e6e6e6} .dim{color:var(--dim);font-size:14px}
 a{color:#fff} ul{padding-left:20px}
 .top{display:flex;align-items:center;gap:14px;margin-bottom:28px}
 .top img{width:56px;height:56px;border-radius:13px}
-.top span{font:700 13px/1 ui-monospace,Menlo,monospace;letter-spacing:.24em;color:#8e8e8e}
-.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
-.shots img{width:100%;border-radius:12px;border:1px solid #2a2a2a}
-nav{margin-top:48px;padding-top:20px;border-top:1px solid #2a2a2a;font-size:14px}
-nav a{margin-right:18px;color:#8e8e8e}
-</style></head><body><main><div class="top"><img src="img/icon.png" alt="GRAVR icon"><span>GRAVR</span></div><h1>Log every set.<br>Beat last week.</h1>
-<p>GRAVR is a workout and food log for iPhone. Tap to log a set, see your week drawn in dots, and ask a coach that has read your log. No account, no ads, no tracking.</p>
-<div class="shots"><img src="img/01-logger.jpg" alt="GRAVR screenshot"><img src="img/02-home.jpg" alt="GRAVR screenshot"><img src="img/03-data.jpg" alt="GRAVR screenshot"><img src="img/04-coach.jpg" alt="GRAVR screenshot"><img src="img/05-food.jpg" alt="GRAVR screenshot"><img src="img/06-exercise.jpg" alt="GRAVR screenshot"></div><nav><a href="">GRAVR</a><a href="privacy/">Privacy</a><a href="support/">Support</a></nav></main></body></html>
+.top span{font:700 13px/1 ui-monospace,Menlo,monospace;letter-spacing:.24em;color:var(--dim)}
+.lede{max-width:620px}
+.get{display:inline-block;margin:18px 0 4px;padding:13px 22px;background:var(--red);color:#000;font:700 13px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border-radius:10px}
+.shots{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:28px}
+.shots img{width:100%;height:auto;display:block;border-radius:12px;border:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 36px}
+.grid div{padding:18px 0;border-top:1px solid var(--line)}
+.grid p{margin:0;font-size:16px}
+.box{border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-top:12px}
+.box p{margin:0 0 10px}.box p:last-child{margin:0}
+.ver{display:flex;align-items:baseline;gap:14px;margin:44px 0 10px;padding-top:22px;border-top:1px solid var(--line)}
+.ver b{font:700 26px/1 ui-monospace,Menlo,monospace;letter-spacing:.04em}
+.ver span{font:600 12px/1 ui-monospace,Menlo,monospace;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+nav{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+nav a{margin-right:18px;color:var(--dim)}
+@media (max-width:640px){.shots{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}}
+</style></head><body><main class="wide"><div class="top"><img src="img/icon.png" alt="GRAVR icon"><span>GRAVR</span></div><h1>Log every set.<br>Beat last week.</h1>
+<p class="lede">GRAVR is a workout and food log for iPhone and Apple Watch. Tap to log a set, see your week drawn in dots, and ask a coach that has read your log. No account, no ads, no tracking.</p>
+<a class="get" href="https://apps.apple.com/app/id6832640010">Get GRAVR on the App Store</a>
+<p class="dim">One purchase. No subscription and no in-app purchases.</p>
+<div class="shots"><img src="img/01-logger.jpg" alt="Logging a set" width="603" height="1311" loading="lazy"><img src="img/02-drop.jpg" alt="The coach writing a drop set" width="603" height="1311" loading="lazy"><img src="img/03-home.jpg" alt="Home" width="603" height="1311" loading="lazy"><img src="img/04-data.jpg" alt="Data" width="603" height="1311" loading="lazy"><img src="img/05-plans.jpg" alt="Ready-made plans" width="603" height="1311" loading="lazy"><img src="img/06-coach.jpg" alt="Coach" width="603" height="1311" loading="lazy"><img src="img/07-food.jpg" alt="Food" width="603" height="1311" loading="lazy"><img src="img/08-exercise.jpg" alt="An exercise page" width="603" height="1311" loading="lazy"></div>
+<h2>New in 2.0</h2>
+<p>A calmer logger, a coach that writes your sets, ready-made plans, 17 new movements and a simpler Food page. <a href="changelog/">Read the changelog</a>.</p>
+<h2>What it does</h2>
+<div class="grid"><div><h3>Log a set in a tap</h3><p>Last time&#x27;s weight and reps are already there. Tap to log; the rest timer starts on its own, or waits for you. Swap, move or remove an exercise mid-session, with Undo.</p></div><div><h3>Sets of every kind</h3><p>Working sets, warm-ups, supersets and drop sets with every drop inside one set. Holds run on a stopwatch; carries, rows and runs take distance and time.</p></div><div><h3>A coach that has read your log</h3><p>Ask what you lifted last week or why a lift has stalled. Ask for a drop set or a new week and it shows exactly what will change before anything does.</p></div><div><h3>Ready-made plans</h3><p>Start from one of four plans, with or without kit, draft a week from your goal, or build your own by hand.</p></div><div><h3>1,365 exercises, animated</h3><p>Search by the name on the machine. Every movement has its animation, a plain name and a short definition, and works with no signal.</p></div><div><h3>Food, counted</h3><p>What is left today, your protein, carbs and fat, and your usual meals to log again in a tap. Photograph a meal, describe it, or enter the numbers.</p></div><div><h3>On your wrist</h3><p>The Apple Watch app runs the session on your iPhone: log a set, turn the Crown to change the weight, feel the rest end. Workouts land in Apple Health.</p></div><div><h3>See it add up</h3><p>Records caught as you set them. Your week&#x27;s load, estimated one-rep maxes, your streak and a wall of every session, drawn in dots.</p></div></div>
+<h2>Bring your own AI</h2>
+<div class="box"><p>GRAVR has no AI subscription and no server of its own. Know this before you buy:</p>
+<p><strong>Free, on your iPhone.</strong> On an iPhone with Apple Intelligence, the coach answers from your log and meals are read on the device. Nothing is sent anywhere.</p>
+<p><strong>With a service you connect.</strong> To have the coach change your plan and write your sets, add an AI service of your own in You &rsaquo; Coach: any OpenAI-compatible service, with your own key. That service bills you itself; GRAVR adds nothing and asks before the first send.</p>
+<p><strong>With no AI at all.</strong> Logging, plans, the library, Food by numbers, Data, the Watch app and widgets all work without it.</p></div>
+<h2>Yours</h2>
+<p>Your log lives on your iPhone and backs up to your own private iCloud. Export it or erase it whenever you like. The developer runs no server and never receives your data. <a href="privacy/">Privacy policy</a>.</p><nav><a href="./">GRAVR</a><a href="changelog/">Changelog</a><a href="privacy/">Privacy</a><a href="support/">Support</a></nav></main></body></html>
